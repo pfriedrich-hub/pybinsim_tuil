@@ -162,10 +162,10 @@ class BinSim(object):
 
            #pydevd.settrace(suspend=False, trace_only_current_thread=True)
 
-            with self.stream as s:
-                self.log.info(f"latency: {s.latency} seconds")
-                while True:
-                    sd.sleep(1000)
+            # with self.stream as s:
+            #    self.log.info(f"latency: {s.latency} seconds")
+            #    while True:
+            #        sd.sleep(1000)
 
 
         except KeyboardInterrupt:
