@@ -392,7 +392,7 @@ def audio_callback(binsim):
         if binsim.ds_convolver.get_counter() % binsim.cpu_usage_update_rate == 0:
             percentiles = np.percentile(binsim.time_usage, (0, 50, 100))
             mean = np.mean(binsim.time_usage)
-            binsim.log.info(f'audio callback utilization: mean {mean:>6.2%} | min {percentiles[0]:>6.2%} | median {percentiles[1]:>6.2%} | max {percentiles[2]:>6.2%}')
+            # binsim.log.info(f'audio callback utilization: mean {mean:>6.2%} | min {percentiles[0]:>6.2%} | median {percentiles[1]:>6.2%} | max {percentiles[2]:>6.2%}')
 
     callback.config = binsim.config
 
